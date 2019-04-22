@@ -62,7 +62,7 @@ def firetesteget():
 
     users_ref = db.collection(u'acoes')
     docs = users_ref.get()
-    msg = "Acoes: "
+    msg = "Acoes: \n"
     for doc in docs:
         docKey = doc.to_dict()
 
